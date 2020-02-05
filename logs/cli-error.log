@@ -1,0 +1,131 @@
+2019-09-29 03:31:35 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-09-29 04:09:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fesa.ledges' doesn't exist in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 132
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'ledges', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('ledges', Array)
+#2 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(559): Cake\Database\Schema\CachedCollection->describe('ledges')
+#3 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(684): Cake\ORM\Table->getSchema()
+#4 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ledges', 'Ledges')
+#7 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Ledges')
+#8 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Ledges')
+#9 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Ledges', 0)
+#10 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('ledges')
+#12 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#13 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fesa.ledges' doesn't exist in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 38
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(38): PDOStatement->execute(NULL)
+#1 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(349): Cake\Database\Statement\MysqlStatement->execute()
+#2 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#3 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(352): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(301): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#6 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(305): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'ledges', Array, Object(Cake\Database\Schema\TableSchema))
+#9 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('ledges', Array)
+#10 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(559): Cake\Database\Schema\CachedCollection->describe('ledges')
+#11 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(684): Cake\ORM\Table->getSchema()
+#12 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ledges', 'Ledges')
+#15 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Ledges')
+#16 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Ledges')
+#17 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Ledges', 0)
+#18 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#19 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('ledges')
+#20 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#21 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2019-09-29 05:29:19 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fesa.ledgers' doesn't exist in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 132
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'ledgers', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('ledgers', Array)
+#2 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(559): Cake\Database\Schema\CachedCollection->describe('ledgers')
+#3 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(684): Cake\ORM\Table->getSchema()
+#4 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ledgers', 'Ledgers')
+#7 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Ledgers')
+#8 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Ledgers')
+#9 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Ledgers', 0)
+#10 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('ledgers')
+#12 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#13 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fesa.ledgers' doesn't exist in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 38
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(38): PDOStatement->execute(NULL)
+#1 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(349): Cake\Database\Statement\MysqlStatement->execute()
+#2 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#3 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(352): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(301): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#6 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Connection.php(305): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'ledgers', Array, Object(Cake\Database\Schema\TableSchema))
+#9 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('ledgers', Array)
+#10 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(559): Cake\Database\Schema\CachedCollection->describe('ledgers')
+#11 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/ORM/Table.php(684): Cake\ORM\Table->getSchema()
+#12 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'ledgers', 'Ledgers')
+#15 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Ledgers')
+#16 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Ledgers')
+#17 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Ledgers', 0)
+#18 /Users/kaede/code/cake3/ledger/vendor/cakephp/bake/src/Shell/BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#19 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('ledgers')
+#20 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#21 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2019-10-03 14:08:40 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-10-03 14:08:48 Error: [RuntimeException] Unknown command `cake migrate`. Run `cake --help` to get the list of valid commands. in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migrate')
+#1 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-10-03 14:11:24 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2019-11-10 15:18:37 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /Users/kaede/code/cake3/ledger/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /Users/kaede/code/cake3/ledger/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

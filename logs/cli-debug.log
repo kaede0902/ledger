@@ -1,0 +1,51 @@
+2019-09-29 03:48:06 Notice: Notice (8): Undefined offset: 1 in [/Users/kaede/code/cake3/ledger/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Migrations\Util\ColumnParser::parseFields() - ROOT/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 52
+Migrations\Shell\Task\MigrationTask::templateData() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 80
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 104
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 40
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 91
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2019-09-29 03:48:06 Notice: Notice (8): Undefined offset: 1 in [/Users/kaede/code/cake3/ledger/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 105]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Migrations\Util\ColumnParser::parseIndexes() - ROOT/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 105
+Migrations\Shell\Task\MigrationTask::templateData() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 81
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 104
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 40
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 91
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2019-09-29 03:48:06 Notice: Notice (8): Undefined offset: 1 in [/Users/kaede/code/cake3/ledger/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 152]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 158
+Migrations\Util\ColumnParser::parsePrimaryKey() - ROOT/vendor/cakephp/migrations/src/Util/ColumnParser.php, line 152
+Migrations\Shell\Task\MigrationTask::templateData() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 82
+Bake\Shell\Task\SimpleBakeTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 104
+Migrations\Shell\Task\SimpleMigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/SimpleMigrationTask.php, line 95
+Migrations\Shell\Task\MigrationTask::bake() - ROOT/vendor/cakephp/migrations/src/Shell/Task/MigrationTask.php, line 40
+Bake\Shell\Task\SimpleBakeTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/SimpleBakeTask.php, line 91
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 531
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 524
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 162
+[main] - ROOT/bin/cake.php, line 12
+
+
+
